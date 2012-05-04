@@ -14,8 +14,8 @@ I know, would be nice to have these precreated for you, right?  That idea's in t
 
 # Facebook Example Prerequisites
 
-* user schema with FaceBook methods enabled
-* FaceBook App ID (optional)
+* user schema with Facebook methods enabled
+* Facebook App ID (optional)
 
 # OAuth 2.0 Example Prerequisites
 
