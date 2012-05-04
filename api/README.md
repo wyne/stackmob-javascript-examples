@@ -2,7 +2,7 @@
 
 This example is intended to run through all the various methods of the JS SDK.
 
-# Preprequisites
+# Prerequisites
 
 <a href="https://www.stackmob.com/platform/api/schemas/create" target="_blank">Create these schemas</a> for your example app:
 
