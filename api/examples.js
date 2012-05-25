@@ -334,7 +334,7 @@
                 console.debug(fileName);
                 console.debug(fileType);
                 console.debug(base64Content);
-                model.setBinaryFile('s3pic2', fileName, fileType, base64Content);
+                model.setBinaryFile('pic', fileName, fileType, base64Content);
                 console.debug(model.toJSON());
                 model.save(StackMobExamples.debugCallback('Saving the binary file to the user'));  
               }
