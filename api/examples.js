@@ -331,11 +331,9 @@
             var user = new StackMob.User({ username: 'Bruce Wayne' });
             user.fetch({
               success: function(model) {
-                console.debug(fileName);
-                console.debug(fileType);
-                console.debug(base64Content);
+                
                 model.setBinaryFile('pic', fileName, fileType, base64Content);
-                console.debug(model.toJSON());
+                
                 model.save(StackMobExamples.debugCallback('Saving the binary file to the user'));  
               }
             });
