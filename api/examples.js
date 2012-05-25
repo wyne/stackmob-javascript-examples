@@ -306,6 +306,54 @@
       });
     });
   }).call();
+  
+  (function() {
+    function handleFileSelect(evt) {
+      var files = evt.target.files; // FileList object
+   
+      // Loop through the FileList
+      for (var i = 0, f; f = files[i]; i++) {
+   
+        var reader = new FileReader();
+   
+        // Closure to capture the file information
+        reader.onload = (function(theFile) {
+          return function(e) {
+   
+            /*
+              e.target.result will return "data:image/jpeg;base64,[base64 encoded data]...".
+              We only want the "[base64 encoded data] portion, so strip out the first part
+            */
+            var base64Content = e.target.result.substring(e.target.result.indexOf(',') + 1, e.target.result.length);
+            var fileName = theFile.name;
+            var fileType = theFile.type;
+   
+            var user = new StackMob.User({ username: 'Bruce Wayne' });
+            user.fetch({
+              success: function(model) {
+                console.debug(fileName);
+                console.debug(fileType);
+                console.debug(base64Content);
+                model.setBinaryFile('s3pic2', fileName, fileType, base64Content);
+                console.debug(model.toJSON());
+                model.save(StackMobExamples.debugCallback('Saving the binary file to the user'));  
+              }
+            });
+            
+   
+          };
+        })(f);
+   
+        // Read in the file as a data URL
+        fileContent = reader.readAsDataURL(f);
+   
+      }
+    }
+    
+    $(document).ready(function() {
+      document.getElementById('files').addEventListener('change', handleFileSelect, false); 
+    });
+  }).call();
 
 
   /**
