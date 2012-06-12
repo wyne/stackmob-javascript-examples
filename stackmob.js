@@ -348,7 +348,8 @@
       var accessToken = parseHash(theUrl, 'access_token');
       var macKey = parseHash(theUrl, 'mac_key');
       var expires = parseInt(parseHash(theUrl, 'expires'));
-      var user = parseHash(theUrl, StackMob['loginField'])
+      var user = parseHash(theUrl, StackMob['loginField']);
+      
 
       //As long as we have everything we need...
       if (_.all([ accessToken, macKey, expires ], _.identity)) {
@@ -390,6 +391,7 @@
 
       this.Storage.persist('oauth2_accessToken', accessToken);
       this.Storage.persist('oauth2_macKey', creds['oauth2_macKey']);
+      this.Storage.persist('oauth2_user', creds['oauth2_user']);
     },
 
     //StackMob validates OAuth 2.0 credentials upon each request and will send back a error message if the credentials have expired.  To save the trip, developers can check to see if their user has valid OAuth 2.0 credentials that indicate the user is logged in.
@@ -536,7 +538,7 @@
 /**
  * StackMob JS SDK
  * BackBone.js-based
- * Backbone.js Version 0.5.3
+ * Backbone.js Version 0.9.2
  * No OAuth - for use with StackMob's HTML5 Product
  */
 (function() {
@@ -817,7 +819,7 @@
                 }
 
                 var host = StackMob.getBaseURL();
-                host = 'http://10.0.2.2:9090/';
+                
                 var path = params['url'].replace(new RegExp(
                     host, 'g'), '/');
                 var sighost = host.replace(
@@ -1070,7 +1072,7 @@
                 if (success) {
                   success(count);
                 }
-              }
+              } else success(xhr); //not actually xhr but actual value
             }
 
             options.success = successFunc;
@@ -1513,7 +1515,6 @@
 
               if (success) {
                 success(result);
-
               }
 
             };

@@ -124,7 +124,7 @@
       
       $('#createOAuthUser').click(function() {
         var user = new StackMob.User({ username: 'oauthtestuser', password: 'oauthtestpassword' });
-        user.createViaOAuth2({
+        user.create({
           success: function(model) {
             console.debug('USER CREATED');
           }
