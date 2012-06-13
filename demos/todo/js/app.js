@@ -1,7 +1,7 @@
 var myapp = {};
 
   StackMob.init({
-    appName: "sm_crud",
+    appName: "todo",
     clientSubdomain: "stackmob339",
     apiVersion: 0
   });
