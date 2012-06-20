@@ -19,23 +19,29 @@ Included are examples housed in each respective folder.
 # Running the Examples 
 
 
-You'll need to initialize `StackMob.init({ ... })` with your application's information.  Some of these examples also need specific schemas and relationships set up.  These will be described in the example pages.
+You'll need to initialize `StackMob.init({ ... })` with your application's information.  Some of these examples also need specific schemas and relationships set up.  These will be described in the example pages and respective READMEs.
 
-When setting up your StackMob Local Runner to run these locally, <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" target="_blank">setup your .stackmob config file</a> in this root folder:
+First, <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" target="_blank">Setup your JS SDK and your StackMob Local Runner</a>.
 
-		/stackmob-javascript-examples/.stackmob
+Save your `.stackmob` file to the folder.  For instance, if you see:
+
+		/mycomputer/JS Starter 0.5.0/index.html
 		
-You should then run StackMob Local Runner from the root folder.  Your Terminal:
+Then save your `.stackmob` file into:
 
-		stackmob-javascript-examples>  stackmob server
+		/mycomputer/JS Starter 0.5.0/.stackmob
+		
+You should then run StackMob Local Runner from the root folder.  In your terminal/command prompt, run:
+
+		>  stackmob server
    
-This is required because the projects refer to the JS file relatively:
-
-		<script type="text/javascript" src="../stackmob.js"></script>
 		
-Once Local Runner is running, feel free to start exploring!
+Once Local Runner is running, feel free to start exploring by visiting these pages!
 
+<a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/index.html</a>
 <a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/api/examples.html</a>
+
+...and more!
 
 # Contributing to the Examples
 
