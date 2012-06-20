@@ -1,14 +1,22 @@
 # StackMob Javascript Examples
 
-Here are examples of the StackMob JS SDK.  This repo will house examples showcasing the JS SDK's features and will also serve as a demo/how-to area. 
+Welcome!  Here are several examples utilizing the JS SDK.  Feel free to use the code as you wish - copy, reuse.. recycle?  
+
+There are demos and examples for your reference.
+
+Do you need a GitHub project simply to try StackMob hosting?  Feel free to use this one by forking it to your account!
+
+You can find the `stackmob-javascript-examples` repo at <a target="_blank" href="https://github.com/stackmob/stackmob-javascript-examples">https://github.com/stackmob/stackmob-javascript-examples</a>   
 
 # Contents
 
-Included are examples housed in each respective folder.  Each project refers to the StackMob JS SDK `stackmob.js` in the root folder. 
+The root folder has `index.html` which will get you started right away!
+
+Included are examples housed in each respective folder.   
 
 # Running the Examples 
 
-Fork or clone this repo.  You'll get the HTML files and also the respective version of the StackMob JS SDK that works with these projects.
+You're here because you downloaded the JS SDK Starter zip or you've forked/cloned the <a href="https://github.com/stackmob/stackmob-javascript-examples" target="_blank">JS Examples GitHub repo</a>.  You'll get the HTML files and also the respective version of the StackMob JS SDK that works with these projects.
 
 You'll need to initialize `StackMob.init({ ... })` with your application's information.  Some of these examples also need specific schemas and relationships set up.  These will be described in the example pages.
 
