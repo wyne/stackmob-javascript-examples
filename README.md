@@ -38,8 +38,8 @@ You should then run StackMob Local Runner from the root folder.  In your termina
 		
 Once Local Runner is running, feel free to start exploring by visiting these pages!
 
-<a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/index.html</a>
-<a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/api/examples.html</a>
+* <a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/index.html</a>
+* <a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/api/examples.html</a>
 
 ...and more!
 
