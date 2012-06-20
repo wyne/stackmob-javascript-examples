@@ -1,10 +1,12 @@
 # StackMob Javascript Examples
 
-Welcome!  Here are several examples utilizing the JS SDK.  Feel free to use the code as you wish - copy, reuse.. recycle?  
+Welcome!  You're here because you downloaded the JS SDK Starter zip or you've forked/cloned the <a href="https://github.com/stackmob/stackmob-javascript-examples" target="_blank">JS Examples GitHub repo</a>.
+
+Here are several examples utilizing the JS SDK.  Feel free to use the code as you wish - copy, reuse.. recycle?  
 
 There are demos and examples for your reference.
 
-Do you need a GitHub project simply to try StackMob hosting?  Feel free to use this one by forking it to your account!
+Do you need a GitHub project to try <a href="http://www.stackmob.com/devcenter/docs/StackMob-Hosted-HTML5:-GitHub" target="_blank">StackMob hosting</a>?  Feel free to use this one by forking it to your GitHub account!
 
 You can find the `stackmob-javascript-examples` repo at <a target="_blank" href="https://github.com/stackmob/stackmob-javascript-examples">https://github.com/stackmob/stackmob-javascript-examples</a>   
 
@@ -16,7 +18,6 @@ Included are examples housed in each respective folder.
 
 # Running the Examples 
 
-You're here because you downloaded the JS SDK Starter zip or you've forked/cloned the <a href="https://github.com/stackmob/stackmob-javascript-examples" target="_blank">JS Examples GitHub repo</a>.  You'll get the HTML files and also the respective version of the StackMob JS SDK that works with these projects.
 
 You'll need to initialize `StackMob.init({ ... })` with your application's information.  Some of these examples also need specific schemas and relationships set up.  These will be described in the example pages.
 
