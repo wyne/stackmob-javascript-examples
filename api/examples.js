@@ -21,9 +21,7 @@
   var Attractions = StackMob.Collection.extend({
     model: Attraction
   });
-
-
-
+  
 
   var StackMobExamples = {};
 
@@ -81,7 +79,11 @@
 
   StackMobExamples['login'] = function() {
     var user = new StackMob.User({ username: 'Bruce Wayne', password: 'imbatman' });
-    user.login(false, StackMobExamples.debugCallback('Logging in.'));
+    user.login(false, StackMobExamples.debugCallback('Logging in.'), function(model) {
+      console.debug(model.toJSON());
+    }, function(model, response) {
+      console.debug(response);
+    });
   };
 
   StackMobExamples['logout'] = function() {
@@ -248,6 +250,13 @@
         var q = new StackMob.Collection.Query();
         q.isNotNull('number');
         items.query(q, StackMobExamples.debugCallback('Getting Items with non-null number'));
+      });
+      
+      $('#smq_lt').click(function() {
+        var items = new SMQItems();
+        var q = new StackMob.Collection.Query();
+        q.lt('number', 5).orderAsc('number');
+        items.query(q, StackMobExamples.debugCallback('Getting Item Number < 5'));
       });
 
       $('#smq_lte').click(function() {

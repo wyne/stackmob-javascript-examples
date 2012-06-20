@@ -12,6 +12,7 @@
   StackMob.init({
     appName: 'your app name',
     clientSubdomain: 'your client domain',
+    publicKey: 'your public key',
     apiVersion: 0
   });
 </script>
@@ -188,30 +189,6 @@
   <div>(results also displayed in your FireBug/Developer Tools JS console)</div>
   <textarea id="results" rows="25" cols="80"></textarea>
 </div>
-
-<h2>Pre-Production: OAuth 2.0 Login</h2>
-
-<div>
-	Running this example requires that you provide a <code>publicKey: 'your public key'</code> field in your `StackMob.init({ ... })`
-</div>
-<div class="loginform">
-	<p>
-		<a href="javascript:void(0);" id="createOAuthUser">Create OAuth User:</a>  oauthtestuser/oauthtestpassword
-	</p>
-	
-	<form action="/user/accessToken" method="POST">
-		Username: <input type="text" name="username" value="oauthtestuser"/>
-		Password: <input type="password" name="password" value="oauthtestpassword"/>
-		
-		<input type="hidden" name="redirect_uri" value="http://127.0.0.1:4567/authentication/loggedIn.html"/>
-		
-		<input type="submit" value="Login"/>
-	</form>
-	<script type="text/javascript">
-		StackMob.initOAuthForm();
-	</script>
-</div>
-
 
 </body>
 </html>
