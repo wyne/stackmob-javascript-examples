@@ -21,7 +21,7 @@ Included are examples housed in each respective folder.
 
 You'll need to initialize `StackMob.init({ ... })` with your application's information.  Some of these examples also need specific schemas and relationships set up.  These will be described in the example pages.
 
-When setting up your StackMob Local Runner to run these locally, setup your `.stackmob` config file in this root folder:
+When setting up your StackMob Local Runner to run these locally, <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" target="_blank">setup your .stackmob config file</a> in this root folder:
 
 		/stackmob-javascript-examples/.stackmob
 		
