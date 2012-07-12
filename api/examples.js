@@ -558,9 +558,9 @@
       $('#rel_deletemsgs').click(function() {
         var msgs = new Messages();
         msgs.fetch(StackMobExamples.debugCallback('Getting all messages', function() {
-          _.each(msgs.models, function(msg) {
+          var model;
+          while(msg = msgs.pop())
             msg.destroy(StackMobExamples.debugCallback('Deleting message: ' + msg.get('message_id')));
-          })
         }));
       });
 
