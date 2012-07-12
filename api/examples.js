@@ -210,9 +210,10 @@
       $('#smq_deleteall').click(function() {
         var smqitems = new SMQItems();
         smqitems.fetch(StackMobExamples.debugCallback('Deleting All SMQ Items', function() {
-          _.each(smqitems.models, function(model) {
-            model.destroy(StackMobExamples.debugCallback('Deleting: ' + model.get('smqitem_id')));
-          });
+          var model;
+          while(model = smqitems.pop()) {
+            model.destroy(StackMobExamples.debugCallback('Deleting: ' + model.get('smqitem_id')));            
+          }
         }));
       });
 
