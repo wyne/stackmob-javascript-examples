@@ -105,10 +105,10 @@
   StackMobExamples['deleteBooks'] = function() {
     var books = new Books();
     books.fetch(StackMobExamples.debugCallback('Fetching Books', function() {
-      _.each(books.models, function(book) {
-        var booktitle = book.get('title');
-        book.destroy(StackMobExamples.debugCallback('Deleting book: ' + booktitle));
-      })
+      var book;
+      while(book = books.pop()) {
+        book.destroy(StackMobExamples.debugCallback('Deleting book: ' + book.get('title')));
+      }
     }));
   };
 
@@ -396,11 +396,10 @@
         var attractions = new Attractions();
 
         attractions.fetch(StackMobExamples.debugCallback('Getting all attractions to Delete', function() {
-          _.each(attractions.models, function(model) {
-            var id = model.get('attraction_id');
-            var name = model.get('name');
-            model.destroy(StackMobExamples.debugCallback('Deleting ' + id + ' / ' + name));
-          })
+          var model;
+          while(model = attractions.pop()) {
+            model.destroy(StackMobExamples.debugCallback('Deleting attraction'));
+          }
         }));
       });
 
