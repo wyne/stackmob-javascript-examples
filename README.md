@@ -16,27 +16,22 @@ The root folder has `index.html` which will get you started right away!
 
 Included are examples housed in each respective folder.   
 
+There is also the StackMob Local Development Server (server.py) included for testing your application locally.
+
 # Running the Examples 
 
 
 You'll need to initialize `StackMob.init({ ... })` with your application's information.  Some of these examples also need specific schemas and relationships set up.  These will be described in the example pages and respective READMEs.
 
-First, <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" target="_blank">Setup your JS SDK and your StackMob Local Runner</a>.
+First, <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" target="_blank">initialize Stackmob</a> within each example file (index.html, api/examples.html, etc. below).
 
-Save your `.stackmob` file to the folder.  For instance, if you see:
+You should then run the StackMob Local Development Server from the root folder.  In your terminal/command prompt, run:
 
-		/mycomputer/JS Starter 0.5.0/index.html
-		
-Then save your `.stackmob` file into:
+		>  cd /mycomputer/JS Starter 0.5.x/
+		>  python server.py
 
-		/mycomputer/JS Starter 0.5.0/.stackmob
-		
-You should then run StackMob Local Runner from the root folder.  In your terminal/command prompt, run:
 
-		>  stackmob server
-   
-		
-Once Local Runner is running, feel free to start exploring by visiting these pages!
+Once Local Runner is running, feel free to start exploring by visiting these pages:
 
 * <a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/index.html</a>
 * <a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/api/examples.html</a>
@@ -48,4 +43,3 @@ Once Local Runner is running, feel free to start exploring by visiting these pag
 Have some examples on how to use the StackMob JS SDK in NodeJS?  How about CoffeeScript?  Email us at support@stackmob.com or simply fork this repo and submit a pull request!  
 
 If you'd like to share your repo, contact us at support@stackmob.com and we can also link to it.
-
