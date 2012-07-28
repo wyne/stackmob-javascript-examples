@@ -16,7 +16,7 @@ The root folder has `index.html` which will get you started right away!
 
 Included are examples housed in each respective folder.   
 
-There is also the StackMob Local Development Server (server.py) included for testing your application locally.
+There is also the StackMob Local Development Server (stackmobserver.py) included for testing your application locally.
 
 # Running the Examples 
 
@@ -28,7 +28,7 @@ First, <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" targe
 You should then run the StackMob Local Development Server from the root folder.  In your terminal/command prompt, run:
 
 		>  cd /mycomputer/JS Starter 0.5.x/
-		>  python server.py
+		>  python stackmobserver.py
 
 
 Once Local Runner is running, feel free to start exploring by visiting these pages:
