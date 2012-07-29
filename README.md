@@ -27,7 +27,7 @@ First, <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" targe
 
 You should then run the StackMob Local Development Server from the root folder.  In your terminal/command prompt, run:
 
-		>  cd /mycomputer/JS Starter 0.5.x/
+		>  cd /mycomputer/path/to/stackmob-javascript-examples/
 		>  python stackmobserver.py
 
 
