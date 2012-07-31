@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-# Python Local Runner v0.0.1
+# StackMob Web Server v0.1.0
 #
 # This server is used for running HTML5 StackMob applications
 # locally on your computer for development purposes.

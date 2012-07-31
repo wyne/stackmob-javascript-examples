@@ -16,7 +16,7 @@ The root folder has `index.html` which will get you started right away!
 
 Included are examples housed in each respective folder.   
 
-There is also the StackMob Local Development Server (stackmobserver.py) included for testing your application locally.
+There is also the StackMob Web Server (stackmobserver.py) included for testing your application locally.
 
 # Running the Examples 
 
@@ -24,10 +24,10 @@ You'll need to initialize `StackMob.init({ ... })` with your application's infor
 
 First, <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" target="_blank">initialize Stackmob</a> within each example file (index.html, api/examples.html, etc. in the below).
 
-Then run the Local Runner below.
+Then run the StackMob Web Server below.
 
 ### Python
-The Python Local Runner is often a faster way to get running than the old Ruby version below.  In your terminal/command prompt, run:
+The Python Web Server is often a faster way to get running than the old Ruby version below.  In your terminal/command prompt, run:
 
 		>  cd /mycomputer/path/to/stackmob-javascript-examples/
 		>  python stackmobserver.py
@@ -43,7 +43,7 @@ Once installed, start the Ruby Local Runner by opening your terminal/command pro
 		
 ## Explore
 
-Once Local Runner is running, feel free to start exploring by visiting these pages:
+Once the web server is running, feel free to start exploring by visiting these pages:
 
 * <a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/index.html</a>
 * <a href="http://127.0.0.1:4567/api/examples.html" target="_blank">http://127.0.0.1:4567/api/examples.html</a>
