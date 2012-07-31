@@ -1,8 +1,22 @@
 #! /usr/bin/env python
 
+# Python Local Runner v0.0.1
+#
+# This server is used for running HTML5 StackMob applications
+# locally on your computer for development purposes.
+#
+# It functions as a conditional proxy server. Resource
+# files like static html, images, css, etc. are served
+# as a normal http server.  Requests originating from
+# the StackMob JavaScript SDK contain a special HTTP
+# Header that tells this web server to forward requests
+# to the StackMob API Server.
+
 import cgi, os, SocketServer, sys, time, urllib2, urlparse
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 from StringIO import StringIO
+
+STACKMOB_API_SERVER = 'api.stackmob.com'
 
 class ProxyHandler(SimpleHTTPRequestHandler):
 
@@ -12,7 +26,7 @@ class ProxyHandler(SimpleHTTPRequestHandler):
             self.log_request()
 
             # Determine Path
-            path = 'http://api.mob1.stackmob.com' + self.path
+            path = 'http://' + STACKMOB_API_SERVER + self.path
             print '\nProxying Request to ' + path
 
             # Determine Headers
@@ -28,7 +42,7 @@ class ProxyHandler(SimpleHTTPRequestHandler):
             else:
                 host = netloc, 80
 
-            headers['HOST'] = 'api.mob1.stackmob.com'
+            headers['HOST'] = STACKMOB_API_SERVER
             headers['X-FORWARDED-FOR'] = host[0]
             headers['X-STACKMOB-FORWARDED-PORT'] = host[1]
             headers['X-STACKMOB-FORWARDED-HOST'] = host[0]
