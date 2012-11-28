@@ -22,7 +22,7 @@ There is also the StackMob Web Server (stackmobserver.py) included for testing y
 
 You'll need to initialize `StackMob.init({ ... })` with your application's information.  Some of these examples also need specific schemas and relationships set up.  These will be described in the example pages and respective READMEs.
 
-First, <a href="https://developer.stackmob.com/sdks/js/config" target="_blank">initialize Stackmob</a> within each example file (index.html, api/examples.html, etc. in the below).
+First, <a href="https://dashboard.stackmob.com/sdks/js/config" target="_blank">initialize Stackmob</a> within each example file (index.html, api/examples.html, etc. in the below).
 
 Then run the StackMob Web Server below.
 
