@@ -1,6 +1,6 @@
 <html>
 	<head>
-    <title>Your First API Call</title>    
+    <title>Your First API Call</title>
     <link href="http://www.stackmob.com/platform/favicon.ico" type="image/vnd.microsoft.icon" rel="icon" />
     <link href="http://www.stackmob.com/platform/favicon.png" type="image/png" rel="icon" />
     <link rel="stylesheet" href="index.css" />
@@ -12,21 +12,20 @@
 		*************************************
 		-->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="http://static.stackmob.com/js/json2-min.js"></script>
-		<script type="text/javascript" src="http://static.stackmob.com/js/underscore-1.4.1-min.js"></script>
-		<script type="text/javascript" src="http://static.stackmob.com/js/backbone-0.9.2-min.js"></script>
-		<script type="text/javascript" src="http://static.stackmob.com/js/stackmob-js-0.6.0-min.js"></script>
+		<script type="text/javascript" src="http://static.stackmob.com/js/stackmob-js-0.6.0-bundled-min.js"></script>
 
 		<!--
 		*************************************
 		INITIALIZE THE JS SDK BELOW
 
 		Copy/Paste the init method from:
-		https://developer.stackmob.com/sdks/js/config
+		https://dashboard.stackmob.com/sdks/js/config
 		*************************************
 		-->
 		<script type="text/javascript">
-//Example initialization
+      // Initialize StackMob object
+      // Copy your init data from here: https://dashboard.stackmob.com/sdks/js/config
+      // Your other app information is here: https://dashboard.stackmob.com/settings
       StackMob.init({
         appName: 'your_app_name',
         clientSubdomain: 'your_client_subdomain',
@@ -34,7 +33,7 @@
         apiVersion : 0
       });
 		</script>
-		
+
 		<!--
 		*************************************
 		StackMob JS SDK code that creates and saves a TestObject
