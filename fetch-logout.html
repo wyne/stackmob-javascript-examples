@@ -32,6 +32,7 @@
       success: function(model) {
         logResult(model);
 
+        // Set theUser object from fetch result
         theUser = model;
       },
       error: function(model, response) {
@@ -53,6 +54,7 @@
   })
 
   $('#logout').click( function() {
+    // Use theUser object from fetch result
     theUser.logout({
       success: function(model){
         logResult(model);
