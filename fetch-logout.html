@@ -45,9 +45,11 @@
     theUser.set("password","justin");
     theUser.login(false, {
       success: function(model){
+        console.log("Success");
         logResult(model);
       },
       error: function(model, response){
+        console.log("Error");
         logResult(response);
       }
     })
@@ -57,9 +59,11 @@
     // Use theUser object from fetch result
     theUser.logout({
       success: function(model){
+        console.log("Success");
         logResult(model);
       },
       error: function(model, response){
+        console.log("Error");
         logResult(response);
       }
     })
