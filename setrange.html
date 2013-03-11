@@ -26,8 +26,6 @@
 
   <script type="text/javascript">
 
-  var theUser = {};
-
   $('#query').click( function() {
     var TestObject = StackMob.Model.extend({ schemaName: 'testobject' });
     var TestObjects = StackMob.Collection.extend({ model: TestObject });
@@ -40,6 +38,7 @@
 
     testObjects.query(q,{
       success: function(results){
+        // Output the results JSON to the textarea
         logResult(results);
       },
       error:function(model, response){
